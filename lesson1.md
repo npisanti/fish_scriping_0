@@ -18,7 +18,7 @@ nomecomando
 ^^^ le parti evidenziate sono comandi da digitare 
 
 ---
-# OSX
+## OSX
 installare Homebrew
 https://brew.sh/
 
@@ -27,7 +27,7 @@ poi	dal Terminale
 brew install fish
 ```
 		
-# WINDOWS
+## WINDOWS
 
 installare MSYS2
 https://www.msys2.org/
@@ -37,7 +37,7 @@ lanciare dal terminale "MSYS2 MinGW 64bit"
 pacman -S fish
 ```
 
-# LINUX
+## LINUX
 
 ubuntu / debian:
 ```
@@ -64,13 +64,13 @@ per passare ad usare fish come shell
 ( ci sono varie maniere di rendere fish la shell di 
 default a seconda del sistema operativo ) 
 
-# vantaggi di fish:
+## vantaggi di fish:
 - più coerente e semplice di bash
 - molto più interattivo 
 
 ---
 
-# LS
+## LS
 
 ```           
 ls 
@@ -100,7 +100,7 @@ si possono anche combinare
 
 ---
 
-#					CD
+## CD
 ```
 cd percorso/cartella/che/vuoi
 ```
@@ -115,7 +115,7 @@ cd ..
 
 ---
 
-# AUTOCOMPLETAMENTO
+## AUTOCOMPLETAMENTO
 
 ogni shell dispone della capacità di provare a completare
 i comandi che state scrivendo premendo il tasto TAB 
@@ -128,7 +128,7 @@ eseguiti si può usare il comando `history`
 
 ---
 
-# 				   MANPAGES
+## MANPAGES
 
 `man` è un comando che permette di aprire nel 
 terminale il manuale per un comando specifico 
@@ -146,7 +146,7 @@ comando, prima ancora di cercare su internet
 ---
 
 
-#					TOUCH
+## TOUCH
 
 `touch` serve a creare un file vuoto con il nome dato
 dat
@@ -167,7 +167,7 @@ NB:
 	`/home/nomeutente`
 
 ---
-#					MKDIR
+## MKDIR
 `mkdir` crea una cartella col nome dato 
 ```
 mkdir nuova
@@ -181,7 +181,7 @@ mkdir -p nuova1/nuova2
 non esistono
 	          
 ---
-#					MV
+## MV
 `mv` serve a spostare i file da una cartella 
 all'altra o a rinominarli, per esempio:
 
@@ -198,7 +198,7 @@ mv cartella/file1.txt file2.txt
 
 ---
 
-#					CP
+## CP
 
 `cp` è come `mv`, ma copia i file invece di 
 muoverli o rinominarli 
@@ -214,7 +214,7 @@ file sostituito
 
 ---
 
-#					RM 
+## RM 
               
 `rm` cancella irrimediabilmente uno o più file. 
 non è possibile più recuperarli, in sistemi con 
@@ -231,14 +231,14 @@ rimuove una cartella e tutto il suo contenuto (anche
 altre cartelle) 
 
 
-# ESERCIZIO
+## ESERCIZIO
 >	usate `cd` ed `ls` per navigare all'interno 
 	del vostro filesystem, create cartelle con `mkdir` 
 	e file con `touch`
 
 
 ---
-#					MATH
+## MATH
 `math` è un comando che fa da calcolatrice
 
 ```
@@ -259,14 +259,14 @@ math "(4+23.3) * 12.77"
 
 ---
 
-# 				   CLEAR
+## CLEAR
 
 `clear` fa in modo di scorrere le righe del terminale 
 cosi che sia totalmente vuoto 
 ```
 clear 
 ```
-#					CAT
+## CAT
 
 `cat` stampa nel terminale il contenuto del file 
 (che sia un file di testo o meno, nel secondo caso il 
@@ -277,13 +277,13 @@ cat nomefile.txt
 
 ---
 
-#	PROGRAMMI
+## PROGRAMMI
 
 - i comandi eseguiti da shell sono PROGRAMMI
 - input = testo 
 - output = testo o azioni compiute sul sistema
 
-# PACKAGE MANAGER
+## PACKAGE MANAGER
 
 - i programmi da usare in un terminale possono essere 
 	installati facilmente con un "package manager"
@@ -292,17 +292,17 @@ cat nomefile.txt
 	del vostro sistema operativo  
 
 ---
-# osx 
+## osx 
 ```
 brew install nomeprogramma
 ```
 
-# window
+## window
 ```
 pacmans -S nomeprogramma
 ```
 
-# linux (debian/ubuntu*)
+## linux (debian/ubuntu*)
 ```
 apt-get install nomeprogramma
 ```
@@ -314,18 +314,18 @@ apt-get install nomeprogramma
 
 installiamo alcuni programmi utili per dopo:
 
-# osx 
+## osx 
 ```
 brew install imagemagick sox ffmpeg wget
 ```
-# windows
+## windows
 ```
 pacmans -S mingw64/mingw-w64-x86_64-sox \
 		mingw64/mingw-w64-x86_64-imagemagick \
 		mingw64/mingw-w64-x86_64-ffmpeg \
 		mingw-w64-x86_64-wget 
 ```
-# linux (debian/ubuntu*)
+## linux (debian/ubuntu*)
 ```
 apt-get install imagemagick sox ffmpeg wget
 ```

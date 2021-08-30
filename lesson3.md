@@ -1,5 +1,5 @@
 
-# SCRIPTING
+## SCRIPTING
 
 La parte più interessante di usare un interfaccia testuale
 è che tutte le operazioni che facciamo una alla volta da 
@@ -8,7 +8,7 @@ testo detto "script", che poi può essere lanciato per
 eseguirle tutte successivamente 
 
 ---
-# HELLO WORLD 
+## HELLO WORLD 
 
 Uno script più essenziale possibile può essere questo 
 
@@ -27,7 +27,7 @@ in fish le stringhe possono essere delimitate da " o '
 
 ---
 
-# ESEGUIRE UNO SCRIPT
+## ESEGUIRE UNO SCRIPT
 
 Per eseguire uno script possiamo usare il comando `fish`
 ```
@@ -45,7 +45,7 @@ chmod +x hello_world.sh
 
 ---
 
-# COMMENTI
+## COMMENTI
 
 `#` viene usato in fish ed in altre shell per scrivere
 commenti all'interno degli script, tutti i comandi che 
@@ -65,7 +65,7 @@ exit
 
 ---
 
-# VARIABILI
+## VARIABILI
 
 Le variabili sono come dei "contenitori" etichettati per 
 poter mantenere in memoria delle stringhe. Si possono 
@@ -88,7 +88,7 @@ differenza di altre shell si usa `set` invece di `=`
 
 ---
 
-# OPZIONI AGLI SCRIPT
+## OPZIONI AGLI SCRIPT
 
 quando si esegue uno script, possono essere date altre
 stringhe in output dopo il nome dello script 
@@ -109,7 +109,7 @@ exit
 
 ---
 
-# IF THEN ELSE 
+## IF THEN ELSE 
 
 `if` e `else` possono essere usato, insieme a `test`, 
 per eseguire parti dello script solo in certe condizioni 
@@ -131,7 +131,7 @@ solo se viene dato "ciao" in input, rispondiamo bene:
 
 ---
 
-# TEST
+## TEST
 
 `test` può essere usato per comparare stringhe e numeri:
 
@@ -157,7 +157,7 @@ caso usarlo direttamente all'interno di un altro comando
 
 ---
 
-# CICLI DI FOR  
+## CICLI DI FOR  
 
 `for` può essere usato per ripetere la stessa parte di 
 script su più variabili
@@ -178,7 +178,7 @@ rappresenta l'elemento su cui stiamo operando
 
 ---
  
-# CICLI DI FOR /2  
+## CICLI DI FOR /2  
 
 Il comando `seq` ci permette di generare una lista di 
 numeri su cui operare. Inoltre possiamo usare i cicli 
@@ -195,7 +195,7 @@ end
 
 ---
 
-# CICLI DI FOR /3  
+## CICLI DI FOR /3  
 
 possiamo usare `*` insieme ad un percorso per definire
 un insieme di file su cui eseguire il codice nel `for`
@@ -211,7 +211,7 @@ vogliamo eseguire su quei file
 
 ---
 
-# ALTRI COMANDI 
+## ALTRI COMANDI 
 
 `find` : cerca dei file 
 `grep` : cerca una parola all'interno del testo
@@ -232,7 +232,7 @@ find . -name '.DS*' -delete
 
 ---
 
-# PIPING
+## PIPING
 
 una delle funzionalità più potenti del terminale è la 
 possibilità di usare gli output testuali di un comando
@@ -253,7 +253,7 @@ mostra come abbiamo usato `ffmpeg` le ultime 10 volte
 
 ---
 
-# ESERCIZI 
+## ESERCIZI 
 
 > trasformare il procedimento che splitta un video in 
 	frames e poi in gif in uno script

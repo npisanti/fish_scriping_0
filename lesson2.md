@@ -1,5 +1,5 @@
 
-#						IMAGEMAGICK
+## IMAGEMAGICK
 					
 "imagemagick" è un programma che serve a convertire immagini
 ed a applicare trasformazioni grafiche
@@ -20,7 +20,7 @@ trasformazioni sul file originale
 
 ---
 
-#						ASTERISCO
+## ASTERISCO
 
 l'asterisco `*` serve come "wildcard" per indicare tutti i file
 presenti che possono soddisfare la stringa nel quale è usato
@@ -40,7 +40,7 @@ particolari per definire un insieme di possibili stringhe
 di input ( non studieremo regex durante questi tutorial) 
 
 ---
-# FFMPEG / 1
+## FFMPEG / 1
 
 ffmpeg è un comando che serve ad operare sui video, include 
 moltissime operazioni tra cui:
@@ -58,7 +58,7 @@ errore, potete usare CTRL+C
 
 ---
 
-# FFMPEG / 2
+## FFMPEG / 2
 
 ```
 ffmpeg -i input.mp4 -c:v libx264 -b 500k output.mp4
@@ -85,7 +85,7 @@ $ ffmpeg -r 60 -f image2 -s 1920x1080 -i pic%04d.png
 
 ---
 
-#						SOX 
+## SOX 
 
 `sox` è un programma che serve a manipolare i file audio da
 terminale
@@ -105,7 +105,7 @@ estrae solo il canale destro o sinistro da un file audio
 
 
 ---
-# ALTRI ESEMPI / 1 
+## ALTRI ESEMPI / 1 
 
 ```
 mogrify -colorspace Gray *.png
@@ -128,7 +128,7 @@ mogrify -transparent black *.png
 
 ---
 
-# ALTRI ESEMPI / 2 
+## ALTRI ESEMPI / 2 
 
 ```
 convert -delay 40 -loop 0 *.jpg output.gif
@@ -155,7 +155,7 @@ tenere sotto bassa la quantità di banda utilizzata da
 un sito 
 
 ---
-# ESERCIZIO
+## ESERCIZIO
 
 >scaricatevi un video da `https://test-videos.co.uk/` 
 oppure scrivete nel terminale:
@@ -173,7 +173,7 @@ convert -delay 5 -loop 0 output/frame* output.gif
 
 ---
 
-#	EDITOR DI TESTO
+## EDITOR DI TESTO
 
 Per la prossima lezione è necessario usare un editor di
 "plain text" cioè di testo non formattato, come ad esempio 
@@ -185,7 +185,7 @@ della sintassi.
 
 ---
 
-#	VARI EDITOR 
+## VARI EDITOR 
 
 Alcuni editor possono essere avviati nel terminale:
 
