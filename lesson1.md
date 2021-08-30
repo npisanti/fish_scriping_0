@@ -18,7 +18,7 @@ nomecomando
 ^^^ le parti evidenziate sono comandi da digitare 
 
 ---
-## OSX
+## osx
 installare Homebrew
 https://brew.sh/
 
@@ -27,7 +27,7 @@ poi	dal Terminale
 brew install fish
 ```
 		
-## WINDOWS
+## windows
 
 installare MSYS2
 https://www.msys2.org/
@@ -37,7 +37,7 @@ lanciare dal terminale "MSYS2 MinGW 64bit"
 pacman -S fish
 ```
 
-## LINUX
+## linux
 
 ubuntu / debian:
 ```
