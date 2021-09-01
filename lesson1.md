@@ -19,10 +19,10 @@ nomecomando
 
 ---
 ## osx
-installare Homebrew
+installare Homebrew:
 https://brew.sh/
 
-poi	dal Terminale 
+poi aprire il terminale e digitare: 
 ```
 brew install fish
 ```
@@ -33,6 +33,8 @@ installare MSYS2
 https://www.msys2.org/
 
 lanciare dal terminale "MSYS2 MinGW 64bit" 
+
+poi digitare:
 ```
 pacman -S fish
 ```
@@ -76,11 +78,13 @@ default a seconda del sistema operativo )
 ls 
 ```
 
-- stampa come output una lista di file e cartelle della directory in cui vi trovate
+- stampa come output una lista di file e cartelle 
+della directory in cui vi trovate
 
 - la directory corrente è mostrata nel PROMPT
 
-- si possono aggiungere dei caratteri al comando per avere più informazioni 
+- si possono aggiungere dei caratteri al comando 
+per avere più informazioni 
 		
 ```
 ls -a
@@ -117,14 +121,15 @@ cd ..
 
 ## AUTOCOMPLETAMENTO
 
-ogni shell dispone della capacità di provare a completare
-i comandi che state scrivendo premendo il tasto TAB 
+ogni shell dispone della capacità di provare a 
+completare i comandi che state scrivendo premendo 
+il tasto TAB 
 
-potete inoltre scorrere gli ultimi comandi che avete 
-eseguito con i tasti freccia su/giù 	
+potete inoltre scorrere gli ultimi comandi che 
+avete eseguito con i tasti freccia su/giù 	
 
-per accedere ad una lista di tutti gli ultimi comandi 
-eseguiti si può usare il comando `history` 
+per accedere ad una lista di tutti gli ultimi 
+comandi eseguiti si può usare il comando `history` 
 
 ---
 
@@ -148,8 +153,7 @@ comando, prima ancora di cercare su internet
 
 ## TOUCH
 
-`touch` serve a creare un file vuoto con il nome dato
-dat
+`touch` serve a creare un file vuoto
 
 ```
 touch test.txt
@@ -158,13 +162,13 @@ touch test.txt
 è un file di testo vuoto
 
 NB:
-> windows ha molti caratteri che non è possibile usare 
-		come nomi di file: / ? < > \ : * | " ^ 
-		e ogni carattere che viene digitato con CTRL
+> windows ha molti caratteri che non è possibile 
+usare come nomi di file: / ? < > \ : * | " ^ 
+e ogni carattere che viene digitato con CTRL
 
 > nella shell il carattere `~` serve ad indicare la 
-	cartella di "home" dell'utente corrente, di solito 
-	`/home/nomeutente`
+cartella di "home" dell'utente corrente, di solito 
+`/home/nomeutente`
 
 ---
 ## MKDIR
@@ -226,15 +230,15 @@ rm file1.txt
 ^^^ addio file1.txt, ci mancherai 
 
 esiste un comando `rmdir` per rimuovere cartelle, 
-ma solo quando sono state già svuotate, mentre `rm -rf`
-rimuove una cartella e tutto il suo contenuto (anche 
-altre cartelle) 
+ma solo quando sono state già svuotate, mentre 
+`rm -rf` rimuove una cartella e tutto il suo
+contenuto (anche altre cartelle) 
 
 
 ## ESERCIZIO
 >	usate `cd` ed `ls` per navigare all'interno 
-	del vostro filesystem, create cartelle con `mkdir` 
-	e file con `touch`
+del vostro filesystem, create cartelle con `mkdir` 
+e file con `touch`
 
 
 ---
@@ -261,16 +265,16 @@ math "(4+23.3) * 12.77"
 
 ## CLEAR
 
-`clear` fa in modo di scorrere le righe del terminale 
-cosi che sia totalmente vuoto 
+`clear` fa in modo di scorrere le righe del 
+terminale cosi che sia totalmente vuoto 
 ```
 clear 
 ```
 ## CAT
 
 `cat` stampa nel terminale il contenuto del file 
-(che sia un file di testo o meno, nel secondo caso il 
-contenuto sarà illegibile)
+(che sia un file di testo o meno, nel secondo caso 
+il contenuto sarà illegibile)
 ```
 cat nomefile.txt
 ```
@@ -285,11 +289,12 @@ cat nomefile.txt
 
 ## PACKAGE MANAGER
 
-- i programmi da usare in un terminale possono essere 
-	installati facilmente con un "package manager"
+- i programmi da usare in un terminale possono 
+essere 	installati facilmente con un 
+"package manager"
 
 - ci sono differenti package manager a seconda
-	del vostro sistema operativo  
+del vostro sistema operativo  
 
 ---
 ## osx 

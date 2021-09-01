@@ -1,16 +1,17 @@
 
 ## SCRIPTING
 
-La parte più interessante di usare un interfaccia testuale
-è che tutte le operazioni che facciamo una alla volta da 
-terminale possono essere collezionate in un singolo file di 
-testo detto "script", che poi può essere lanciato per 
-eseguirle tutte successivamente 
+La parte più interessante di usare un interfaccia 
+testuale è che tutte le operazioni che facciamo 
+una per una possono essere collezionate in un 
+singolo file di testo detto "script", che poi può 
+essere lanciato per eseguirle tutte successivamente 
 
 ---
 ## HELLO WORLD 
 
-Uno script più essenziale possibile può essere questo 
+Uno script più essenziale possibile può essere 
+questo 
 
 ```
 #!/usr/bin/fish
@@ -20,24 +21,29 @@ echo "hello world"
 exit
 ```
 
-`echo` è un comando che serve a emettere in output una 
-stringa, cioè una sequenza di caratteri alfanumerici
+`echo` è un comando che serve a emettere in output 
+una stringa, cioè una sequenza di caratteri 
+alfanumerici
 
-in fish le stringhe possono essere delimitate da " o ' 
+in fish le stringhe possono essere delimitate da 
+" o ' 
 
 ---
 
 ## ESEGUIRE UNO SCRIPT
 
-Per eseguire uno script possiamo usare il comando `fish`
+Per eseguire uno script possiamo usare il 
+comando `fish`
 ```
 fish hello_world.sh
 ```
 
-Gli script possono essere eseguiti come dei programmi nel 
-caso sia dato loro il permesso di esecuzione con `chmod`. 
-Si può eseguire un programma nella directory corrente con 
-`./nomeprogramma`
+Gli script possono essere eseguiti come dei 
+programmi nel caso sia dato loro il permesso di 
+esecuzione con `chmod`. 
+
+Si può eseguire un programma nella directory 
+corrente con `./nomeprogramma`
 ```
 chmod +x hello_world.sh
 ./hello_world.sh
@@ -47,9 +53,9 @@ chmod +x hello_world.sh
 
 ## COMMENTI
 
-`#` viene usato in fish ed in altre shell per scrivere
-commenti all'interno degli script, tutti i comandi che 
-seguono un `#` non verranno eseguiti 
+`#` viene usato in fish ed in altre shell per 
+scrivere commenti all'interno degli script, tutti 
+i comandi che seguono un `#` non verranno eseguiti 
 
 ```
 #!/usr/bin/fish
@@ -67,9 +73,10 @@ exit
 
 ## VARIABILI
 
-Le variabili sono come dei "contenitori" etichettati per 
-poter mantenere in memoria delle stringhe. Si possono 
-usare le variabili come opzioni usando il simbolo `$`
+Le variabili sono come dei "contenitori" 
+etichettati per poter mantenere in memoria delle 
+stringhe. Si possono usare le variabili come 
+opzioni usando il simbolo `$`
 
 ```
 #!/usr/bin/fish
@@ -84,19 +91,20 @@ echo "$x $y"
 exit
 ```
 in fish ogni operazione è un comando, perciò a 
-differenza di altre shell si usa `set` invece di `=`  
+differenza di altre shell si usa `set` 
+invece di `=` per assegnare variabili
 
 ---
 
 ## OPZIONI AGLI SCRIPT
 
-quando si esegue uno script, possono essere date altre
-stringhe in output dopo il nome dello script 
+quando si esegue uno script, possono essere date 
+altre stringhe in output dopo il nome dello script 
 ```
 ./mioscript.sh uno due tre 
 ```
-si può accedere a queste stringe con la variabile argv,
-alla quale si accede come se fosse un array
+si può accedere a queste stringe con la variabile 
+argv, alla quale si accede come se fosse un "array"
 
 ```
 #!/usr/bin/fish
@@ -111,8 +119,9 @@ exit
 
 ## IF THEN ELSE 
 
-`if` e `else` possono essere usato, insieme a `test`, 
-per eseguire parti dello script solo in certe condizioni 
+`if` e `else` possono essere usato, 
+insieme a `test`, per eseguire parti dello script 
+solo in certe condizioni 
 ```
 #!/usr/bin/fish
 
@@ -124,7 +133,8 @@ end
 
 exit
 ```
-solo se viene dato "ciao" in input, rispondiamo bene:
+solo se viene dato "ciao" in input, rispondiamo 
+bene:
 ```
 ./mioscript.sh ciao 
 ```
@@ -133,7 +143,8 @@ solo se viene dato "ciao" in input, rispondiamo bene:
 
 ## TEST
 
-`test` può essere usato per comparare stringhe e numeri:
+`test` può essere usato per comparare 
+stringhe e numeri:
 
 ```
 test "uno" == "uno"  # true
@@ -151,16 +162,16 @@ test "3" -lt 3             # false
 test "3" -le 3             # true
 ```
 spesso in fish si posson usare le parentesi `( )` 
-per assegnare ad una variabile un comando o in questo
-caso usarlo direttamente all'interno di un altro comando
-`(math "2*2")` vale come 4 
+per assegnare ad una variabile un comando o in 
+questo caso usarlo direttamente all'interno di un 
+altro comando, `(math "2*2")` vale come 4 
 
 ---
 
 ## CICLI DI FOR  
 
-`for` può essere usato per ripetere la stessa parte di 
-script su più variabili
+`for` può essere usato per ripetere la stessa parte
+di script su più variabili
 ```
 #!/usr/bin/fish
 
@@ -173,17 +184,17 @@ end
 
 exit
 ```
-In questo caso usiamo `x` come nome della variabile che 
-rappresenta l'elemento su cui stiamo operando
+In questo caso usiamo `x` come nome della variabile
+che rappresenta l'elemento su cui stiamo operando
 
 ---
  
 ## CICLI DI FOR /2  
 
-Il comando `seq` ci permette di generare una lista di 
-numeri su cui operare. Inoltre possiamo usare i cicli 
-di for anche senza scrivere un file di script, ma 
-direttamente dal terminale
+Il comando `seq` ci permette di generare una lista
+di numeri su cui operare. Inoltre possiamo usare i
+cicli  di for anche senza scrivere un file di
+script, ma direttamente dal terminale
 
 ```
 for v in (seq 2 8) 
@@ -197,17 +208,18 @@ end
 
 ## CICLI DI FOR /3  
 
-possiamo usare `*` insieme ad un percorso per definire
-un insieme di file su cui eseguire il codice nel `for`
+possiamo usare `*` insieme ad un percorso per
+definire un insieme di file su cui eseguire il
+codice nel `for`
 
 ```
 for f in *.png 
 	echo "$f è un file png"
 end
 ```
-fare un `echo` dei file su cui si vuole operare è molto
-utile prima di sostituire ad `echo` le operazioni che 
-vogliamo eseguire su quei file 
+fare un `echo` dei file su cui si vuole operare è
+molto utile prima di sostituire ad `echo` le
+operazioni che vogliamo eseguire su quei file 
 
 ---
 
@@ -222,7 +234,7 @@ vogliamo eseguire su quei file
 `whoami` : restituisce il nome dell'utente corrente
 `head` : mostra solo le prime 10 linee dell'input
 `tail` ; mostra solo le ultime 10 linee dell'input
-`history` : mostra una lista degli ultimi comandi dati
+`history` : mostra una lista degli ultimi comandi 
 
 esempio: cancella i file extra che crea OSX
 ```
@@ -234,33 +246,33 @@ find . -name '.DS*' -delete
 
 ## PIPING
 
-una delle funzionalità più potenti del terminale è la 
-possibilità di usare gli output testuali di un comando
-come input di un altro comando grazie al simbolo di 
-pipe: `|` 
+una delle funzionalità più potenti del terminale è 
+la  possibilità di usare gli output testuali di un 
+comando come input di un altro comando grazie al
+simbolo di pipe: `|` 
 
 ```
 ls -la | grep .png 
 ```
-il comando precendete prende l'output di `ls` e lo usa 
-come input di `grep`, che restituisce in output solo 
-le linee che contengono la stringa ".png" 
+il comando precendete prende l'output di `ls` e lo
+usa come input di `grep`, che restituisce in output
+solo le linee che contengono la stringa ".png" 
 
 ```
 history | grep ffmpeg | head 
 ```
-mostra come abbiamo usato `ffmpeg` le ultime 10 volte 
+mostra come abbiamo usato `ffmpeg` le ultime 
+10 volte 
 
 ---
 
 ## ESERCIZI 
 
-> trasformare il procedimento che splitta un video in 
-	frames e poi in gif in uno script
-
+> trasformare il procedimento che splitta un video 
+in frames e poi in gif in uno script
 
 > scrivere uno script per impaginare una serie di 
 	file .png, può essere utile `convert -rotate 90` 
 
-> in generale, potete scrivere script anche solo per 
-	tenere a mente comandi molto complessi 
+> in generale, potete scrivere script anche solo 
+per tenere a mente comandi molto complessi 

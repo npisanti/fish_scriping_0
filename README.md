@@ -1,7 +1,7 @@
 
 # fish scripting 0 
 
-slide per il corso "fish scripting 0", condivisione 10 
+slide per il corso "fish scripting 0", condivisione 10, da usare con [slides](https://github.com/maaslalani/slides) 
 
 per poi saperne di più:
 - [il tutorial](https://fishshell.com/docs/3.0/tutorial.html) completo di fish
