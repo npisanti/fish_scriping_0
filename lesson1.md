@@ -1,10 +1,11 @@
 
-# FISH WORKSHOP
+---
 
+# FISH WORKSHOP
 
 ---
 
-# FISH 
+## FISH 
 
 FISH sta per "Friendly Interactive Shell".
 
@@ -19,10 +20,10 @@ nomecomando
 
 ---
 ## osx
-installare Homebrew:
+aprire il terminale e incollare il codice da:
 https://brew.sh/
 
-poi aprire il terminale e digitare: 
+per installare homebrew, poi digitare: 
 ```
 brew install fish
 ```
@@ -69,6 +70,9 @@ default a seconda del sistema operativo )
 ## vantaggi di fish:
 - più coerente e semplice di bash
 - molto più interattivo 
+
+tutti i comandi mostrati in questa e la prossima 
+lezione possono essere usati in una shell qualunque
 
 ---
 
@@ -334,3 +338,32 @@ pacmans -S mingw64/mingw-w64-x86_64-sox \
 ```
 apt-get install imagemagick sox ffmpeg wget
 ```
+
+---
+
+## EDITOR DI TESTO
+
+Per la terza lezione sarà è necessario usare un 
+editor di "plain text" cioè di testo non 
+formattato, come ad esempio il blocco note di 
+windows o textedit di osx.
+
+Esistono molti editor di testo specifici per 
+scrivere codice, che hanno tra le funzioni utili 
+l'evidenziamento della sintassi. 
+
+---
+
+## VARI EDITOR 
+
+Alcuni editor possono essere avviati nel terminale:
+
+- `micro` è molto intuitivo da utilizzare
+- `nano` è spesso già disponibile in vari terminali
+- `vim` e `emacs` sono molto più avanzati 
+
+Al di fuori del terminale buone scelte possono 
+essere:
+
+- `visual studio code` 
+- `sublime text` 

@@ -181,32 +181,3 @@ ffmpeg -i jellyfish.mp4 output/frame%04d.png
 mogrify -resize 500x500 output/*
 convert -delay 5 -loop 0 output/frame* output.gif
 ```
-
----
-
-## EDITOR DI TESTO
-
-Per la prossima lezione è necessario usare un 
-editor di "plain text" cioè di testo non 
-formattato, come ad esempio il blocco note di 
-windows o textedit di osx.
-
-Esistono molti editor di testo specifici per 
-scrivere codice, che hanno tra le funzioni utili 
-l'evidenziamento della sintassi. 
-
----
-
-## VARI EDITOR 
-
-Alcuni editor possono essere avviati nel terminale:
-
-- `micro` è molto intuitivo da utilizzare
-- `nano` è spesso già disponibile in vari terminali
-- `vim` e `emacs` sono molto più avanzati 
-
-Al di fuori del terminale buone scelte possono 
-essere:
-
-- `visual studio code` 
-- `sublime text` 
