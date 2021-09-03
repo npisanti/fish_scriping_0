@@ -1,7 +1,7 @@
 
 ---
 
-# FISH WORKSHOP
+# FISH SCRIPTING ZERO
 
 ---
 
