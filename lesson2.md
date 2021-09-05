@@ -179,6 +179,28 @@ convert -coalesce output.gif -delete -1 -delete 0
 -reverse -coalesce output.gif -loop 0 boomerang.gif
 ```
 ^^^ rende la gif di prima palindroma ("boomerang")
+
+---
+
+## ALTRI ESEMPI / 3
+
+```
+mogrify -gravity center -crop 640x640+0+0 
++repage *.png
+```
+^^^ preserva solo un ritaglio di 640x640 pixels
+dal centro dell'immagini
+
+```
+mogrify -resize x500 -gravity center 
+-crop 500x500+0+0 +repage *.png
+```
+^^^ ridimensiona un delle immagini orizzontali 
+e ritaglia la parte quadrata al centro, 
+generando un immagine di 500x500 pixels, 
+per tagliare un immagine verticale sarebbe 
+da usare `-resize 500x` invece di x500
+
 ---
 
 ## ESERCIZIO
